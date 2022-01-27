@@ -19,7 +19,7 @@ async getMessages(): Promise<Message[]>{
     return messages;
 
 }
-//only 1 user
+//only 1 message
 async getMessage(messageID: string): Promise<Message>{
     const message= await this.messageModel.findById(messageID);
     return message;
