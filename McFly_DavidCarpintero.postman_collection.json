@@ -1,0 +1,327 @@
+{
+	"info": {
+		"_postman_id": "e68cf1a2-b784-45cf-8726-0c76edac78f9",
+		"name": "McFly_DavidCarpintero",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Crear Usuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"davidcarpintero@gmail.com\",\r\n    \"password\":\"davidcarpintero\",\r\n    \"active\":0\r\n\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/user/create/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"create",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listado Usuarios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "61f1350bdce6b46a1a612e9b"
+						},
+						"url": {
+							"raw": "localhost:3000/user",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listado Usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user/61f157725c1bd2a6ca0b77f7",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"61f157725c1bd2a6ca0b77f7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"davidcarpinteromodificado@gmail.com\",\r\n    \"password\":\"davidcarpinteromodificado\",\r\n    \"active\":1\r\n}\r\n\r\n"
+						},
+						"url": {
+							"raw": "localhost:3000/user/update?userID=61f157725c1bd2a6ca0b77f7",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"update"
+							],
+							"query": [
+								{
+									"key": "userID",
+									"value": "61f157725c1bd2a6ca0b77f7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/user/delete?userID=61f1aab39c5c80ca36dea20f",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "userID",
+									"value": "61f1aab39c5c80ca36dea20f"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Messages",
+			"item": [
+				{
+					"name": "Crear Mensaje",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"davidcarpintero2@gmail.com\",\r\n    \"message\":\"buenos dias\",\r\n    \"read\":0\r\n\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/message/create/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"message",
+								"create",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listado Mensajes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "61f1350bdce6b46a1a612e9b"
+						},
+						"url": {
+							"raw": "localhost:3000/message",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listado Mensaje",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/message/61f2ade747b67a77df5c3873",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"message",
+								"61f2ade747b67a77df5c3873"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Usuario Copy",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"davidcarpintero@gmail.com\",\r\n    \"message\":\"primer mensaje modificado y leido\",\r\n    \"read\":1\r\n}\r\n\r\n"
+						},
+						"url": {
+							"raw": "localhost:3000/message/update?messageID=61f2ade747b67a77df5c3873",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"message",
+								"update"
+							],
+							"query": [
+								{
+									"key": "messageID",
+									"value": "61f2ade747b67a77df5c3873"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Mensaje",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/message/delete?messageID=61f2adf047b67a77df5c3875",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"message",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "messageID",
+									"value": "61f2adf047b67a77df5c3875"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Llamada localhost",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"carpinterohdavid3333@gmail.com\",\r\n    \"password\":\"prueba3333\",\r\n    \"active\":0\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		}
+	]
+}
